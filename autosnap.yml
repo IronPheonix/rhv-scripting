@@ -1,0 +1,42 @@
+---
+# autosnap settings
+#
+
+# dryrun
+#
+dryrun: True
+
+# snap_prefix
+#
+snap_prefix: 'autosnap'
+
+# date_format
+#
+snap_date_format: '%Y%m%d_%H%M'
+
+# refresh_timer
+#   How many seconds to wait for operations
+#   (snapshot create/delete) before looking
+#   for an updated status.
+#
+#   Example:
+#     refresh_timer: 60
+refresh_timer: 32
+
+# backups
+#   VMs to snapshot
+#
+#   Example:
+#     backups:
+#       - name: 'nat.example1-vm'
+#         vmid: 'd90d7af8-db90-4323-ab75-9c33f7c75723'
+#         keep: 4
+backups:
+  - name: 'nat.example1-vm'
+    vmid: 'd90d7af8-db90-4323-ab75-9c33f7c75723'
+    keep: 7
+  - name: 'pub.example2-vm'
+    vmid: '02557f24-502b-49ab-afba-73995e148d75'
+    keep: 7
+
+# EOF

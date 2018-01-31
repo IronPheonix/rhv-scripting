@@ -1,0 +1,37 @@
+---
+# RHV-Utils Configuration
+
+# server_address
+#   RHV-M/RHEV-M server hostname & port
+#
+#   Example:
+#     server_address: 'revenant.nat.localdomain:8443'
+server_address: 'revenant.nat.localdomain'
+
+# server_api_path
+#   RHV-M/RHEV-M path to the REST API
+#
+#   Examples:
+#     server_api_path: '/api'
+#     server_api_path: '/ovirt-engine/api'
+server_api_path: '/ovirt-engine/api'
+
+# sleep_delay
+#   Delay between "big" commands (seconds)
+#
+#   Example:
+#     sleep_delay: 300
+sleep_delay: 60
+
+# authentication
+#   auth_username: RHV-M username string
+#   auth_password: RHV-M password
+#
+#   Example:
+#     auth_username: admin@internal
+#     auth_password: let-me-in
+#
+auth_username: 'username@EXAMPLE-AD'
+auth_password: 'password'
+
+# EOF
